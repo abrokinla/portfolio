@@ -1,0 +1,358 @@
+
+* {
+  margin:0;
+  padding:0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+	background-color:#F59E0B;
+  /* rgb(200, 140, 12); */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header{
+  border-bottom: 1px solid rgb(59, 60, 62);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  height:15vh;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link{
+  font-size: 1rem;
+  font-weight: 400;  
+  padding: 3px 15px;
+  color: RGB(24, 24, 27);
+}
+
+.nav-link:hover{
+  background-color:RGB(24, 24, 27);
+  border-radius:10px;
+  padding: 3px 15px;
+  color: #fff;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: RGB(24, 24, 27);
+}
+
+#banner {
+  background-color: #fff;
+  background-image:url(../images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  width:100%;
+  height:60vh; 
+}
+
+#intro {
+  position: absolute;
+  Width:50%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 150px 0 0 40px;
+}
+
+#intro  p {
+  font-size: 24px;
+  font-weight:700;
+}
+
+#intro p {
+  opacity: 0;
+  animation: scroll-in 5s;
+  animation-delay: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes scroll-in {
+  0% {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+#bottom-flag {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:20vh;
+    top:10px;
+    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    background-color: #F0D9A5;
+  }
+
+#bio-summary { 
+  position: absolute;
+  text-align:center;
+  width:30%;
+  height:30vh;
+  background-color: #7B7968;
+  color:#fff;
+  font-size:1.5em;
+  box-shadow:#000; 
+}
+
+#bio-summary article {
+  width:100%;
+  font-weight:400;
+  margin:7px 2px;
+}
+
+#profile, #project, #contact {
+  color: #fff;
+}
+
+#profile h2, #project h2, #contact h2 {
+  margin:90px 0 0 20px;
+}
+
+
+/* style for mobile screens */
+@media only screen and (max-width: 767px) {
+  /*Mobile-specific CSS styles go here */
+  .navbar {
+    height:10vh;
+  }
+  .nav-menu {
+    position: fixed;
+    z-index:9999;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #banner {
+    background-color: #fff;
+    background-image:url(../images/banner-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+  }
+
+  #intro {
+    position: absolute;
+    Width:50%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 15px 0 0 20px;
+  }
+
+  #intro  p {
+    font-size: 12px;
+    font-weight:700;
+  }
+
+  #bottom-flag {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:5vh;
+    top:-15px;
+    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    background-color:#F0D9A5;
+  }
+
+  #bio-summary { 
+    position: absolute;
+    text-align:center;
+    width:40%;
+    height:10vh;
+    background-color:#7B7968;
+    color:#fff;
+    font-size:9px;
+    box-shadow: #000;  
+  }
+
+  #bio-summary article {
+    width:100%;
+    font-weight:400;
+    margin:7px 2px;
+  }
+
+  #profile, #project, #contact {
+    color: #fff;
+  }
+
+  #profile h2, #project h2, #contact h2 {
+    margin:20px 0 0 20px;
+  }
+
+}
+
+ .toggle {
+    --width: 80px;
+    --height: calc(var(--width) / 3);
+
+    position: relative;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    box-shadow: 0px 1px 3px rgba(239, 120, 16, 0.3);
+    border-radius: var(--height);
+    cursor: pointer;
+    padding-top:2px;    
+}
+
+
+/* hiding checkbox */
+.toggle input {
+    display: none;
+}
+
+.toggle .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--height);
+  border: 2px solid #969696;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.4s ease-in-out;
+}
+.toggle .slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--height));
+  height: calc(var(--height));
+  border-radius: calc(var(--height) / 2);
+  background-color: rgb(233, 111, 11);
+  box-shadow: 0px 1px 3px rgba(229, 111, 15, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* Adding slider effect */
+.toggle input:checked + .slider {
+  background-color: white;
+}
+.toggle input:checked + .slider::before {
+  transform: translateX(calc(var(--width) - var(--height)));
+}
+
+/* Adding text in the toggle button */
+.toggle .labels {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-family: sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle .labels::after {
+  content: attr(data-off);
+  position: absolute;
+  right: 5px;
+  color: #4d4d4d;
+  opacity: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle .labels::before {
+  content: attr(data-on);
+  position: absolute;
+  left: 5px;
+  color: #0975ab;
+  opacity: 0;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle input:checked~.labels::after {
+  opacity: 0;
+}
+
+.toggle input:checked~.labels::before {
+  opacity: 1;
+}
