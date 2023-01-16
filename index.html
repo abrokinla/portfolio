@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Profile &mdash; Araoye.py</title>
+	<title>Profile &mdash; Araoye.dev</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Fullstack web devoloper" />
 	<meta name="keywords" content="Fullstack developer, Reactjs, HTML, CSS, Python, Flask, RESTful API, Frontend Backend"/>
@@ -40,7 +40,7 @@
 		<div class="container">
 			<header class="header">
 				<nav class="navbar">
-					<a href="#" class="nav-logo">Araoye.py</a>
+					<a href="#" class="nav-logo">Araoye.dev</a>
 					<ul class="nav-menu">
 						<li class="nav-item">
 							<a href="#profile" class="nav-link">Profile</a>
@@ -61,18 +61,33 @@
 			</header>
 			<section id="banner">
 				<section id="intro">
-					<p>Hi! I am Araoye Abraham.</p>
-					<p> I am a Fullstack web developer from Nigeria </p>
-					<!-- <p>looking for an opportunity to make an impact with my skills.</p> -->
-				</section>
+					<p class = "paragraph">
+						<span style="--delay: 0s">Hi! I am Araoye Abraham.</span>
+						<span style="--delay: .15s">I am a Fullstack web developer from Nigeria </span>
+						<!-- <p>looking for an opportunity to make an impact with my skills.</p> -->
+					</p>
+				</section>				
 			</section>
 			<section id="bottom-flag">
+				<section id="social-media">
+					<span id="twitter">
+						<i class="fab fa-twitter" aria-hidden="true"></i>						
+					</span>
+					<span id="linkedin">
+						<i class="fab fa-linkedin" aria-hidden="true"></i>						
+					</span>
+					<span id="github">
+						<i class="fab fa-github" aria-hidden="true"></i>
+					</span>
+				</section>
+
 				<section id="bio-summary">
 					<article>
 						My motivation as a web developer is the ability to create products that increase productivity, saves time and eases human endeavour.
 					</article>
 				</section>
-			</section>
+				
+			</section>			
 
 			<!-- <label class="toggle">
 				<input type="checkbox">
@@ -81,30 +96,63 @@
 			</label> -->
 			
 			<section id="profile">
-				<h2>PROFILE</h2> <hr>
-				<div>
-					<h3>About Me</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec semper nisl. Pellentesque maximus, est malesuada laoreet tincidunt, ligula velit gravida velit, eget porttitor mauris tortor in ipsum.</p>
-				</div>
-				<div>
-					<h3>Experience</h3>
+				<h2>PROFILE</h2> 
+				<section id="profile-content">
+					<section id="about"> 	
+						<h3>About Me</h3> <hr>
+						<p> Hi! I am Araoye Abraham, a CS grad from a reputable instution here in Nigeria. 
+							I have always been enthusiastic about tech for as long as I can remember and 
+							my passion for tech has always been about creating products that automate business
+							processes for organizations and generally eases human endeavour in different areas.
+						</p>
+						<p>
+							I also enjoy teaching and mentoring, particularly the young, with the aim of introducing them
+							early into the world of tech.
+						</p>
+						<p>
+							My super-powers are my communication skills, unrelenting attitude in the face of challenges,
+							ability to quickly adapt to new environment, excellent problem solving skills, and strong team spirit.
+						</p>
+					</section>
+					<section id="skills">
+						<h3>Stack &amp Technologies</h3> <hr>
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<lie>JavaScript</li>
+							<li>REACTJS</li>
+							<li>POSTGRESQL</li>
+							<li>AWS</li>
+							<li>DOCKER</li>
+						</ul>
+					</section>				
+				</section>
+				<section id="experience">
+					<h3>Experience</h3> <hr>
 					<ul>
-						<li>experience 1</li>
-						<li>experience 2</li>
+						<li>Building a Real Estate Website with Reactjs (frontend) and Python (Flask-Backend)</li>
+						<section id="exp-details">
+							<p> 
+								The project was modelled after a friend's real estate business. 
+								The website uses Firebase Auth to authenticate users, allows for users to sign up 
+								as agents and post properties available for rent or sales from different locations.
+							</p>
+							<p> 
+								The major goal of this project was to simplify the means of uploading details of real estate
+								and to increase the reach beyond the borders of just social media posts.
+							</p>
+							<p> 
+								I gained experience working with react components, JWTs,  and Firebase. I also improved
+								in my commiunication with other experienced devs in the community who were willing to give advice
+								and direction when I was stuck. I also gained more experience in searching for solutions to bugs 
+								in my code using the necessary tools. This was my first fullstack project, it was so complicated, 
+								but I learnt a whole lot from building it.
+						
+							</p>
+						</section>
 					</ul>
-				</div>
-				<div>
-					<h3>Skills</h3>
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<lie>JavaScript</li>
-						<li>REACTJS</li>
-						<li>POSTGRESQL</li>
-						<li>AWS</li>
-						<li>DOCKER</li>
-					</ul>
-				</div>
+				</section>
+				
 			</section>
 
 			<section id="project">

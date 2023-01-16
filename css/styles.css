@@ -1,4 +1,3 @@
-
 * {
   margin:0;
   padding:0;
@@ -7,8 +6,14 @@
 }
 
 body {
-	background-color:#F59E0B;
-  /* rgb(200, 140, 12); */
+	background-color: #fff;
+  /* color:#fff; */
+}
+
+.container {
+  display:flex;
+  flex-direction:column;
+  width:100%;
 }
 
 li {
@@ -66,7 +71,7 @@ a {
   background-color:RGB(24, 24, 27);
   border-radius:10px;
   padding: 3px 15px;
-  color: #fff;
+  color: #F69A36;
 }
 
 .nav-logo {
@@ -99,21 +104,26 @@ a {
   font-weight:700;
 }
 
-#intro p {
+/* #intro p {
   opacity: 0;
   animation: scroll-in 5s;
   animation-delay: 3s;  
   animation-fill-mode: forwards;
+} */
+
+.paragraph span {
+  display: block;
+  opacity:0;
+  animation: reveal 0.5s forwards var(-delay);
 }
 
-@keyframes scroll-in {
-  0% {
-      opacity: 0;
-      transform: translateX(-20px);
+@keyframes reveal {
+  from {
+    translate: 0 20px;    
   }
-  100% {
-      opacity: 1;
-      transform: translateX(0);
+  to {
+    translate: none;
+    opacity:1;
   }
 }
 
@@ -123,21 +133,23 @@ a {
     justify-content: center;
     align-items:center;
     width:100%;
-    height:20vh;
-    top:10px;
+    height:26vh;
+    top:-5px;
     box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
-    background-color: #F0D9A5;
+    background-color: #F69A36;
   }
 
 #bio-summary { 
   position: absolute;
   text-align:center;
   width:30%;
-  height:30vh;
-  background-color: #7B7968;
-  color:#fff;
+  height:33vh;
+  background-color: #3d256a;
+  color:#ffffff;
   font-size:1.5em;
-  box-shadow:#000; 
+  box-shadow:#000;
+  border-radius:8px 8px 0 0;
+  bottom:0; 
 }
 
 #bio-summary article {
@@ -146,12 +158,76 @@ a {
   margin:7px 2px;
 }
 
-#profile, #project, #contact {
-  color: #fff;
+#social-media {
+    display: flex;
+    position: absolute;
+    width: 22%;
+    /* height: 9vh; */
+    margin-right: 100px; 
+    right:0;
+    justify-content:space-between;
+    align-items: center; 
+  }
+
+  #twitter,
+  #linkedin,
+  #github {
+    border-radius: 50%;
+    background-color: #101010;
+    color:#fff;
+    padding:20px;
+    font-size:24px; 
+    margin: 5px;   
+  }
+
+  #social-media span:hover {
+    background-color: #fff;
+    color:#000;
+    cursor:pointer;
+  }
+
+#profile {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin: 0 90px
 }
 
 #profile h2, #project h2, #contact h2 {
   margin:90px 0 0 20px;
+  color:rgb(233, 111, 11);
+}
+
+#profile-content {
+  display: flex;  ;
+}
+
+#about {
+  width: 60%;
+  margin: 5px 20px;
+}
+
+#skills {
+  flex:1;
+  margin: 5px 5px;
+}
+
+#experience {
+  display:flex;
+  flex-direction: column;
+  margin-top:20px;
+}
+
+#experience h3, #experience ul {
+  margin-left:20px;
+}
+
+#experience li {
+  font-weight:700;
+}
+
+#exp-details {
+  margin: 15px 10px 10px 0;
 }
 
 
@@ -207,6 +283,7 @@ a {
     background-repeat: no-repeat;
     width: 100%;
     height: 150px;
+    margin: 0;
   }
 
   #intro {
@@ -228,16 +305,17 @@ a {
   #bottom-flag {
     position:relative;
     display:flex;
-    justify-content: center;
-    align-items:center;
     width:100%;
-    height:5vh;
-    top:-15px;
+    height:9vh;
+    top:-10px;
     box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
-    background-color:#F0D9A5;
+    background-color:#03082f;
+    margin: 0;
+    align-items:center;
   }
 
   #bio-summary { 
+    bottom:0;
     position: absolute;
     text-align:center;
     width:40%;
@@ -254,12 +332,73 @@ a {
     margin:7px 2px;
   }
 
-  #profile, #project, #contact {
-    color: #fff;
+  #social-media {
+    display: flex;
+    position: absolute;
+    width: 100px;
+    /* height: 9vh; */
+    margin-right: 5px; 
+    right:0;
+    justify-content:space-between;
+    align-items: center; 
+  }
+
+  #social-media span {
+    border-radius: 50%;
+    background-color: #101010;
+    color:#fff;
+    padding:10px;
+    font-size:12px; 
+    margin: 0;   
+  }
+
+  #social-media span:hover {
+    background-color: #fff;
+    color:#000;
+    cursor:pointer;
+  }
+
+  #profile {
+    color: #000;
+    display: flex;
+    flex-direction:column;
   }
 
   #profile h2, #project h2, #contact h2 {
+    color:rgb(233, 111, 11);
     margin:20px 0 0 20px;
+  }
+
+  #profile-content {
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about {
+    width: 100%;
+    margin:0;
+  }
+
+  #skills, 
+  #experience {
+    display:flex;
+    flex-direction: column;
+    color: #000;
+    margin-top: 20px;
+  }
+
+  #skills h3, #skills ul, #experience h3, #experience ul {
+    margin-left:20px;
+  }
+
+  #experience li {
+    font-weight: 700;
+    margin-bottom:5px;
+  }
+
+  #exp-details {
+    margin: 15px 10px 10px 0;
   }
 
 }
