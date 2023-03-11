@@ -7,7 +7,6 @@
 
 body {
 	background-color: #fff;
-  /* color:#fff; */
 }
 
 .container {
@@ -55,6 +54,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+/* 
 
 .nav-item {
   margin-left: 2rem;
@@ -96,25 +96,20 @@ a {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin: 150px 0 0 40px;
+  margin: 90px 0 0 40px;
 }
 
 #intro  p {
-  font-size: 24px;
+  font-size: 34px;
   font-weight:700;
+  margin-left:90px;
 }
 
-/* #intro p {
-  opacity: 0;
-  animation: scroll-in 5s;
-  animation-delay: 3s;  
-  animation-fill-mode: forwards;
-} */
 
 .paragraph span {
   display: block;
-  opacity:0;
-  animation: reveal 0.5s forwards var(-delay);
+  opacity:1;
+  animation: reveal 0.9s forwards var(-delay);
 }
 
 @keyframes reveal {
@@ -122,9 +117,9 @@ a {
     translate: 0 20px;    
   }
   to {
-    translate: none;
-    opacity:1;
-  }
+    opacity: 1;
+    transform: translateY(0px);
+  }  
 }
 
 #bottom-flag {
@@ -141,6 +136,9 @@ a {
 
 #bio-summary { 
   position: absolute;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   text-align:center;
   width:30%;
   height:33vh;
@@ -154,15 +152,15 @@ a {
 
 #bio-summary article {
   width:100%;
-  font-weight:400;
-  margin:7px 2px;
+  font-size: 20px;
+  font-weight:300;
+  margin:10px;
 }
 
 #social-media {
     display: flex;
     position: absolute;
     width: 22%;
-    /* height: 9vh; */
     margin-right: 100px; 
     right:0;
     justify-content:space-between;
@@ -207,6 +205,10 @@ a {
   margin: 5px 20px;
 }
 
+#about p {
+  margin-bottom: 12px;
+}
+
 #skills {
   flex:1;
   margin: 5px 5px;
@@ -229,11 +231,19 @@ a {
 #exp-details {
   margin: 15px 10px 10px 0;
 }
-
+ */
 
 /* style for mobile screens */
 @media only screen and (max-width: 767px) {
   /*Mobile-specific CSS styles go here */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid red;
+  }
+
   .navbar {
     height:10vh;
   }
@@ -312,31 +322,28 @@ a {
     background-color:#03082f;
     margin: 0;
     align-items:center;
+    justify-content: space-betwen;
   }
 
   #bio-summary { 
     bottom:0;
     position: absolute;
     text-align:center;
-    width:40%;
-    height:10vh;
-    background-color:#7B7968;
+    width:70%;
     color:#fff;
-    font-size:9px;
     box-shadow: #000;  
   }
 
   #bio-summary article {
     width:100%;
-    font-weight:400;
-    margin:7px 2px;
+    font-size: 9px;
+    margin: 10px 14px;
   }
 
   #social-media {
     display: flex;
     position: absolute;
     width: 100px;
-    /* height: 9vh; */
     margin-right: 5px; 
     right:0;
     justify-content:space-between;
@@ -362,6 +369,8 @@ a {
     color: #000;
     display: flex;
     flex-direction:column;
+    width:100%;
+    border:2px solid red;
   }
 
   #profile h2, #project h2, #contact h2 {
@@ -371,14 +380,20 @@ a {
 
   #profile-content {
     margin:20px;
+    width:80%;
     display: flex;
     flex-direction: column;
+    border:2px solid red;
   }
 
   #about {
     width: 100%;
     margin:0;
   }
+
+  #about p {
+  margin-bottom: 10px;
+}
 
   #skills, 
   #experience {
