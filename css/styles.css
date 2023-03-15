@@ -54,7 +54,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-/* 
 
 .nav-item {
   margin-left: 2rem;
@@ -188,7 +187,7 @@ a {
   color: #000;
   display: flex;
   flex-direction: column;
-  margin: 0 90px
+  margin: 0 90px;
 }
 
 #profile h2, #project h2, #contact h2 {
@@ -231,19 +230,94 @@ a {
 #exp-details {
   margin: 15px 10px 10px 0;
 }
- */
+
+#project-container {
+    margin-bottom:20px;
+    width: 50%;
+    border:2px solid rgb(233, 111, 11);
+    padding:10px; 
+  }
+
+  #project-description {
+    width: 90%; 
+  }
+
+  #project-description h3 {
+    margin-top: 12px;
+  }
+
+  #project {
+    display: flex;
+    flex-direction: column; 
+    margin: 0 90px;
+  }
+
+  #projects {
+    margin:50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #img-container {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  #img-hover {
+    display: none;
+  }
+
+  #img-hover:hover {    
+    display:block;
+    width: 85%;
+    height: 150px;
+    position: absolute;  
+    z-index: 999;
+    background-color: #000;
+    opacity: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #img-hover span {
+    color: #000;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color:#fff;
+    padding: 5px;
+  }
+
+  #project-img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  #project-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  #stack-used {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+
+  #tech {
+    background-color:#000;
+    border-radius: 8px;
+    margin: 5px 5px 0 0;
+    padding: 5px;
+  }
+ 
 
 /* style for mobile screens */
 @media only screen and (max-width: 767px) {
   /*Mobile-specific CSS styles go here */
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border:2px solid red;
-  }
-
+  
   .navbar {
     height:10vh;
   }
@@ -323,6 +397,7 @@ a {
     margin: 0;
     align-items:center;
     justify-content: space-betwen;
+    border: 2px solid red;
   }
 
   #bio-summary { 
@@ -370,7 +445,6 @@ a {
     display: flex;
     flex-direction:column;
     width:100%;
-    border:2px solid red;
   }
 
   #profile h2, #project h2, #contact h2 {
@@ -383,7 +457,6 @@ a {
     width:80%;
     display: flex;
     flex-direction: column;
-    border:2px solid red;
   }
 
   #about {
@@ -393,7 +466,7 @@ a {
 
   #about p {
   margin-bottom: 10px;
-}
+  }
 
   #skills, 
   #experience {
@@ -414,6 +487,73 @@ a {
 
   #exp-details {
     margin: 15px 10px 10px 0;
+  }
+
+  #project-container {
+    margin-bottom:20px;
+  }
+
+  #project {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  #projects {
+    margin:10px;
+  }
+
+  #img-container {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  #img-hover {
+    display: none;
+  }
+
+  #img-hover:hover {    
+    display:block;
+    width: 85%;
+    height: 150px;
+    position: absolute;  
+    z-index: 999;
+    background-color: #000;
+    opacity: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #img-hover span {
+    color: #000;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color:#fff;
+    padding: 5px;
+  }
+
+  #project-img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  #project-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  #stack-used {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+
+  #tech {
+    background-color:#000;
+    border-radius: 8px;
+    margin: 5px 5px 0 0;
+    padding: 5px;
   }
 
 }
