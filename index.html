@@ -46,10 +46,10 @@
 							<a href="#profile" class="nav-link">Profile</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Projects</a>
+							<a href="#project" class="nav-link">Projects</a>
 						</li>						
 						<li class="nav-item">
-							<a href="#" class="nav-link">Contact</a>
+							<a href="#contact" class="nav-link">Contact</a>
 						</li>
 					</ul>
 					<div class="hamburger">
@@ -61,29 +61,38 @@
 			</header>
 			<section id="banner">
 				<section id="intro">
-					<p class = "paragraph">
-						<span style="--delay: 0s">Hi! I am Araoye Abraham.</span>
-						<span style="--delay: .15s">I am a Fullstack web developer from Nigeria </span>
-						<!-- <p>looking for an opportunity to make an impact with my skills.</p> -->
+					<p class="paragraph">
+					  <span class="scroll-text" style="--delay: 0s">Hi! I am Araoye Abraham.</span>
+					  <span class="scroll-text" style="--delay: .15s">I am a Fullstack web developer from Nigeria </span>
 					</p>
-				</section>				
+				  </section>
+								  
 			</section>
 			<section id="bottom-flag">
 				<section id="social-media">
-					<span id="twitter">
-						<i class="fab fa-twitter" aria-hidden="true"></i>						
-					</span>
-					<span id="linkedin">
-						<i class="fab fa-linkedin" aria-hidden="true"></i>						
-					</span>
-					<span id="github">
-						<i class="fab fa-github" aria-hidden="true"></i>
-					</span>
+					<section id="sm-col">
+						<span id="twitter">
+							<i class="fab fa-twitter" aria-hidden="true"></i>						
+						</span>
+						<p>Follow me on twitter</p>
+					</section>
+					<section id="sm-col">
+						<span id="linkedin">
+							<i class="fab fa-linkedin" aria-hidden="true"></i>						
+						</span>
+						<p>Let's connect on Linkedin</p>
+					</section>
+					<section id="sm-col">
+						<span id="github">
+							<i class="fab fa-github" aria-hidden="true"></i>
+						</span>
+						<p>Check out my projects on Github</p>
+					</section>				
 				</section>
 
 				<section id="bio-summary">
 					<article>
-						If you're looking for a dedicated and skilled team player to help bring your technology projects to life, I would love to chat. Please feel free to contact me to discuss how we can work together to achieve your goals.
+						If you're looking for a dedicated and skilled team player to help bring your technology projects to life, I would love to chat. Please feel free to <a href ="#contact"> contact</a> me to discuss how we can work together to achieve your goals.
 					</article>
 				</section>
 				
@@ -119,32 +128,7 @@
 						</ul>
 					</section>				
 				</section>
-				<section id="experience">
-					<h3>Experience</h3> <hr>
-					<ul>
-						<li>Building a Real Estate Website with Reactjs (frontend) and Python (Flask-Backend)</li>
-						<section id="exp-details">
-							<p> 
-								The project was modelled after a friend's real estate business. 
-								The website uses Firebase Auth to authenticate users, allows for users to sign up 
-								as agents and post properties available for rent or sales from different locations.
-							</p>
-							<p> 
-								The major goal of this project was to simplify the means of uploading details of real estate
-								and to increase the reach beyond the borders of just social media posts.
-							</p>
-							<p> 
-								I gained experience working with react components, JWTs,  and Firebase. I also improved
-								in my commiunication with other experienced devs in the community who were willing to give advice
-								and direction when I was stuck. I also gained more experience in searching for solutions to bugs 
-								in my code using the necessary tools. This was my first fullstack project, it was so complicated, 
-								but I learnt a whole lot from building it.
-						
-							</p>
-						</section>
-					</ul>
-				</section>
-				
+				<!--  -->				
 			</section>
 
 			<section id="project">
@@ -156,13 +140,25 @@
 								<img src="images/real-estate.png" alt="screenshot of real estate project" />				
 							</section>
 							<section id="img-hover">
-								<span id="btn-github">Github</span>
-								<span id="btn-live">View Live</span>
+								<section id="btn-case">
+									<span id="btn-github">Github</span>
+									<span id="btn-live">View Live</span>
+								</section>
 							</section>								
 						</section>
 						<section id="project-description">
 							<p>The <strong>AraoyeHomes</strong> Real Estate website helps simplify the process of searching for real estate either for rent or for sale. It also provides a platform for real estate agents to display and manage properties.</p>
-
+							<section id="proj-delivery">
+								<ul>
+									<li>Designed and implemented a RESTful API with Python </li>
+									<li>Built a dynamic frontend with React and CSS </li>
+									<li>Implemented user cerification and authentication using FIrebase</li>
+									<li>Ensured website secrets were properly secured using environment vairiables</li>
+									<li>Made sure to store user credentials like passwrod to database  as hashed values using Bcrypt </li>
+									<li>Reduced the amount of time it takes agents to upload property listing with multiple images by 70% </li>
+									<li>Increased the reach of property listing posted by agents beyond Social media acounts and pages to millions of internet users.</li>
+								</ul>
+							</section>						
 							<h3>Technologies used</h3>
 							<section id="stack-used">								
 								<span id="tech">Python(Flask) </span>
@@ -181,12 +177,25 @@
 								<img src="images/mmbstrade.png" alt="screenshot of mmbstrade investment project" />				
 							</section>
 							<section id="img-hover">
-								<span id="btn-github">Github</span>
-								<span id="btn-live">View Live</span>
+								<section id="btn-case">
+									<span id="btn-github">Github</span>
+									<span id="btn-live">View Live</span>
+								</section>
 							</section>								
 						</section>
+						
 						<section id="project-description">
 							<p>The <strong>MMBSTrade</strong> investment website is an invstment website that allows users to invest specific amount of money for a given period of time whilest calculating the daily compounding interest amongs other things.</p>
+							<section id="proj-delivery">
+								<ul>
+									<li>Designed and implemented user authentication and verification using Firebase Auth </li>
+									<li>Implemented a database and created tables using MySQL</li>
+									<li>Implemented CRUD on the website using PHP and JavaScript. </li>
+									<li>Implemented user cerification and authentication using FIrebase</li>
+									<li>Wrote the algorithm that calculates the daily compounding interests on amounts invested by investors and displays it on the dashboard.</li>
+									<li>Modified the dashboard template</li>
+								</ul>
+							</section>
 
 							<h3>Technologies used</h3>
 							<section id="stack-used">								
@@ -196,7 +205,43 @@
 								<span id="tech">Firebase </span>
 								<span id="tech">PHP </span>
 								<span id="tech">MySQL </span>
-								<span id="tech">BOOTSTRAP(V) </span>
+								<span id="tech">BOOTSTRAP </span>
+							</section>							
+							
+						</section>
+					</section>
+					<section id="project-container">
+						<section id="img-container">
+							<section id="project-img">
+								<img src="images/SMAS.png" alt="screenshot of school management and administration project built with Visual BASIC.Net" />				
+							</section>
+							<section id="img-hover">
+								<section id="btn-case">
+									<span id="btn-github">Github</span>
+									<span id="btn-live">View Live</span>
+								</section>
+							</section>								
+						</section>
+						<section id="project-description">
+							<p>The <strong>SMAS- School Management and Administration 
+								System</strong> is an offline  software built using Visual BASIC .NET an OOP langugage to help schools manage students academic and bio data, finicial records and proper report creation.</p>
+
+							<section id="proj-delivery">
+								<ul>
+									<li>Designed the UI using Vidual Basic .Net Designer tools </li>
+									<li>Implemented a database and created tables using Microsoft Access</li>
+									<li>Developed a means of electronically storing student, staff and school data moving away from the manual file system used by the school. </li>
+									<li>Automated system for recording payments and keeping financial records.</li>
+									<li>Implemented reports that reduced the time it took the bursary department to give a documented break down of finaicial transactions at ther end of school term from one week to 30 mins.</li>
+									<li>Implemented Budgeting, keeping of expenditure records as well as an estimated amount the school is expected to make per term based on the number of registered students.</li>
+								</ul>
+							</section>
+
+							<h3>Technologies used</h3>
+							<section id="stack-used">								
+								<span id="tech">Visual BASIC .Net </span>
+								<span id="tech">Microsoft Access </span>
+								<span id="tech">SQL </span>								
 							</section>							
 							
 						</section>
@@ -207,7 +252,21 @@
 
 			<section id="contact">
 				<h2>CONTACT</h2> <hr>
+				<section id="contact-container">
+					<label> Subject
+						<input type="text" placheolder="Subject" id="subject"></input>
+					</label>
+					<label> Message
+						<textarea maxLength="500" placheolder="Message" id="message"></textarea>
+					</label>
+					<a href="#" id="send">Send</a>
+					<!-- <button id="send">Send</button> -->
+				</section>
 			</section>
+
+			<footer>
+				<p>copyright araoye.dev 2023</p>
+			</footer>
 			
 		</div>
 		<script src="js/myscript.js"></script>
