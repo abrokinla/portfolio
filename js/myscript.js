@@ -16,3 +16,14 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+const sendButton = document.getElementById('send');
+const subjectInput = document.getElementById('subject');
+const messageInput = document.getElementById('message');
+
+sendButton.addEventListener('click', function() {
+  const subject = encodeURIComponent(subjectInput.value);
+  const message = encodeURIComponent(messageInput.value);
+  const mailtoUrl = 'mailto:your.abrokinla@gmail.com?subject=' + subject + '&body=' + message;
+  window.location.href = mailtoUrl;
+});
