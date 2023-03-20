@@ -24,6 +24,7 @@ const messageInput = document.getElementById('message');
 sendButton.addEventListener('click', function() {
   const subject = encodeURIComponent(subjectInput.value);
   const message = encodeURIComponent(messageInput.value);
-  const mailtoUrl = 'mailto:your.abrokinla@gmail.com?subject=' + subject + '&body=' + message;
+  const mailtoUrl = 'mailto:abrokinla@gmail.com?subject=' + subject + '&body=' + message;
   window.location.href = mailtoUrl;
 });
+

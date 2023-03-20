@@ -252,7 +252,7 @@
 
 			<section id="contact">
 				<h2>CONTACT</h2> <hr>
-				<section id="contact-container">
+				<!-- <section id="contact-container">
 					<label> Subject
 						<input type="text" placheolder="Subject" id="subject"></input>
 					</label>
@@ -260,12 +260,23 @@
 						<textarea maxLength="500" placheolder="Message" id="message"></textarea>
 					</label>
 					<a href="#" id="send">Send</a>
-					<!-- <button id="send">Send</button> -->
-				</section>
+					<button id="send">Send</button>
+				</section> -->
+					<div class="container">
+						<form>
+							<label for="subject">Subject<label>
+							<input type="text" id="subject" placeholder="Subject">
+							
+							<label for="message">Message</label>
+							<textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+						  
+							<input id="send" type="submit" value="Submit">
+						</form>						  
+					</div>
 			</section>
 
 			<footer>
-				<p>copyright araoye.dev 2023</p>
+				<p>&copy; 2023 Araoye.dev. All rights reserved.</p>
 			</footer>
 			
 		</div>
